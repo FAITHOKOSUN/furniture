@@ -1,0 +1,172 @@
+.header {
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-top {
+  background: #8b4513;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.header-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.search-bar button {
+  padding: 8px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-button {
+  display: none;
+}
+
+.action-icon {
+  margin-right: 5px;
+}
+
+.cart-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #EDC9AF;
+  color: black;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.header-line {
+  width: 100%;
+  height: 1px;
+  background-color: #0a0a0a;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ccc;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.navigation a:hover {
+  color: #8b4513;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-right: 5px;
+  width: 20px;
+  height: auto;
+}
+
+.menu-text {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+  }
+
+  
+
+  .menu-text {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .action-button.show-mobile {
+    display: inline-flex;
+  }
+
+  .cart-button {
+    justify-content: center;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
