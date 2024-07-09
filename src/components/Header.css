@@ -26,9 +26,15 @@
   padding: 16px 20px;
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
-  max-width: 100%;
-  height: auto;
+  width: 150px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .search-bar {
@@ -118,34 +124,19 @@
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu-icon {
-  margin-right: 5px;
-  width: 20px;
-  height: auto;
-}
-
-.menu-text {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  
+  .navigation {
+    display: none;
+  }
+
   .menu {
     display: flex;
     align-items: center;
     position: absolute;
     left: 10px;
-  }
-
-  
-
-  .menu-text {
-    display: inline-block;
-    margin-right: 5px;
   }
 
   .actions {
@@ -165,8 +156,41 @@
   .show-desktop {
     display: none;
   }
+/* Existing CSS */
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu span {
+    display: none;
+  }
+
+  .actions button:first-child {
+    display: none;
+  }
 
   .logo {
-    margin-bottom: 10px;
+    margin-left: 40px;
+    max-width: 200px; /* Increase the size for mobile */
   }
+
+  .header-bottom {
+    justify-content: center;
+  }
+}
+
 }
