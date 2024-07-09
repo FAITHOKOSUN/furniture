@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logoImage from '../assets/logo.png';
+import menuIcon from '../assets/menu.png';
 import Icon from '../assets/shopping_cart 1.png';
 
 const Header = () => {
-  const [cartCount, setCartCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0); // Example state for cart count
 
   return (
     <header className="header">
@@ -13,9 +14,14 @@ const Header = () => {
         <p>10% OFF WHEN YOU ORDER VIA THE MOBILE APP</p>
       </div>
       <div className="header-bottom">
-        <Link to="/" className="logo-link">
-          <img src={logoImage} alt="Company Logo" className="logo" />
-        </Link>
+        <div className="logo-container">
+          <Link to="/" className="logo-link">
+            <img src={logoImage} alt="Company Logo" className="logo" />
+          </Link>
+          <div className="menu">
+            <img src={menuIcon} alt="Menu Icon" className="menu-icon" />
+          </div>
+        </div>
         <div className="search-bar">
           <input type="text" placeholder="Search Mahogany" />
           <button>🔍</button>
@@ -31,6 +37,9 @@ const Header = () => {
       </div>
       <div className="header-line"></div>
       <nav className="navigation">
+        <Link to="/menu">
+          <span>Menu</span>
+        </Link>
         <Link to="/shop" className="shop-link">
           Shop
         </Link>
