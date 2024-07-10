@@ -4,6 +4,7 @@ import './Header.css';
 import logoImage from '../assets/logo.png';
 import menuIcon from '../assets/menu.png';
 import Icon from '../assets/shopping_cart 1.png';
+import { assets } from '../assets/assets';
 
 const Header = () => {
   const [cartCount, setCartCount] = useState(0); // Example state for cart count
@@ -27,8 +28,14 @@ const Header = () => {
           <button>🔍</button>
         </div>
         <div className="actions">
-          <button>Get App</button>
-          <button>Log in/Register</button>
+          <button className="action-button">
+            <img src={assets.phoneicon} alt="Phone Icon" className="action-icon" />
+            Get App
+          </button>
+          <button className="action-button">
+            <img src={assets.user} alt="User Icon" className="action-icon" />
+            Log in/Register
+          </button>
           <Link to="/cart" className="cart-button">
             🛒
             <div className="cart-badge">{cartCount}</div>
