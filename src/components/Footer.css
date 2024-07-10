@@ -21,23 +21,23 @@
 }
 .logo {
   width: 150px;
-  max-width: 100%; /* Adjust the size of the logo as needed */
+  max-width: 100%; 
 }
 .secured-text {
-  margin-right: 10px; /* Adjust margin as needed */
+  margin-right: 10px; 
 }
 
 .payment-icon {
-  width: 15px; /* Adjust the size of the payment icons as needed */
+  width: 15px;
   height: auto;
-  margin: 0 5px; /* Adjust margin between payment icons */
+  margin: 0 5px; 
 }
 
 .secured-payment {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0px; /* Adjust margin as needed */
+  margin-bottom: 0px; 
 }
 
 
@@ -51,12 +51,12 @@
 }
 
 .footer-content {
-  max-width: 1280px; /* Limit maximum width for content */
+  max-width: 1280px; 
   margin: auto;
   display: flex;
-  flex-wrap: wrap; /* Allow content to wrap if necessary */
-  justify-content: center; /* Center content horizontally */
-  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: flex-start; 
 }
 .logo {
   margin-right: 20px;
@@ -66,9 +66,9 @@
 }
 
 .links {
-  display: inline-block; /* Display links in a line */
-  text-align: center; /* Center links */
-  margin-bottom: 10px; /* Space between links and newsletter */
+  display: inline-block; 
+  text-align: center; 
+  margin-bottom: 10px; 
 }
 
 .links a {
@@ -78,12 +78,12 @@
 }
 
 .newsletter {
-  text-align: center; /* Center content */
-  margin-top: 20px; /* Space above newsletter */
+  text-align: center; 
+  margin-top: 20px; 
 }
 
 .newsletter p {
-  margin-bottom: 10px; /* Space between text and input */
+  margin-bottom: 10px; 
 }
 
 .newsletter input {
@@ -106,23 +106,23 @@
 .footer-bottom {
   color: black;
   padding: 10px 0;
-  font-size: 13px; /* Adjust as needed on mobile */
+  font-size: 13px;
   font-weight: bold;
   font-family: lato;
-  text-align: center; /* Center content */
-  /* Wrap text if necessary */
+  text-align: center; 
+  
 
   
 }
 
 @media screen and (max-width: 768px) {
   .links {
-    text-align: left; /* Align links to the left on mobile */
+    text-align: left;
   }
 
   .links a {
-    display: block; /* Display links in a block (list) on mobile */
-    margin: 5px 0; /* Add vertical margin between links */
+    display: block;
+    margin: 5px 0; 
   }
  
   .footer-content {
@@ -132,8 +132,8 @@
 }
 
   .newsletter {
-    /* Move newsletter styles within media query */
-    margin-top: 0; /* Remove top margin on mobile */
+   
+    margin-top: 0; 
   }
   .footer-bottom {
     font-size: 1rem; 

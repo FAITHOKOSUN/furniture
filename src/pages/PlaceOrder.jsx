@@ -31,62 +31,50 @@ const PlaceOrder = () => {
         <div className="step">
           <div className="step-line"></div>
         </div>
-        <div className="step">
-          <div className="step-line"></div>
-        </div>
       </div>
-
-      <div className="place-order-container">
-        <div className="cart-item-summary">
-          <div className="cart-item-details">
-            Email Address
-            <div className="sign-in"> 
-              <input type="email" placeholder="Enter your Email Address" />
-              <p>
-                <button className="brown-button">Sign In</button>
-                <button className="light-brown-button">Continue As Guest</button>
-              </p>
-              <p>New Here? <a href="#">Create Account</a></p>
-              <label>
-                <input type="checkbox" /> Send me promotional offers and deals.
-              </label>
-            </div>
-          </div>
-          <div className="order-summary">
-            <h2>Order Summary</h2>
-            <p>Subtotal: ₦86,000</p>
-            <p>Shipping costs: --</p>
-            <p>Tax Estimate: ₦4,500</p>
-            <p>GRANDTOTAL Estimate: ₦90,500</p>
-            <button className="proceed-to-checkout">Proceed to Checkout</button>
+      <div className="cart-container">
+        <div className="cart-item-details">
+          <div>Email Address</div>
+          <div className="sign-in"> 
+            <input type="email" placeholder="Enter your Email Address" />
+            <p>
+              <button className="brown-button">Sign In</button>
+              <button className="light-brown-button">Continue As Guest</button>
+            </p>
+            <p>New Here? <a href="#">Create Account</a></p>
+            <label>
+              <input type="checkbox" /> Send me promotional offers and deals.
+            </label>
           </div>
         </div>
-        
-        <div className="shipping-address">
-          <h3>Shipping Address</h3>
-          <input type="text" placeholder="Full Name" /><br />
-          <input type="text" placeholder="Street Address" /><br />
-          <input type="text" placeholder="Enter your Street Address" /><br />
-          <input type="text" placeholder="Postal Code" /><br />
-          <select>
-            <option>Select your City</option>
-            <option>City 1</option>
-            <option>City 2</option>
-          </select><br />
-          <input type="text" placeholder="Enter your phone number" /><br />
+        <div className="order-summary">
+          <h2>Order Summary</h2>
+          <p><span>Subtotal:</span> <span className="right-align">₦86,000</span></p>
+          <p className="shipping-cost">
+            <span>Shipping costs:</span>
+          </p>
+          <p className="tax-estimate"><span>Tax Estimate:</span> <span className="right-align">₦4500</span></p>
+          <p><span><strong>GRANDTOTAL Estimate:</strong></span> <span className="right-align"><strong>₦90,500</strong></span></p>
+          <button className="proceed-to-checkout">Proceed to Checkout</button>
+          <img src={assets.info} alt="Info Icon" />Shipping fee to be updated upon adding shipping location
           
-            <h3>Billing Information</h3>
-            
-            
-<input type="checkbox" /> Billing Address same as Shipping Address
-            
-            
-            
-        
         </div>
-        
       </div>
-
+      <div className="shipping-address">
+        <h3>Shipping Address</h3>
+        <input type="text" placeholder="Full Name" /><br />
+        <input type="text" placeholder="Street Address" /><br />
+        <input type="text" placeholder="Enter your Street Address" /><br />
+        <input type="text" placeholder="Postal Code" /><br />
+        <select>
+          <option>Select your City</option>
+          <option>Lagos</option>
+          <option>Abuja</option>
+        </select><br />
+        <input type="text" placeholder="Enter your phone number" /><br />
+        <h3>Billing Information</h3>
+        <input type="checkbox" /> Billing Address same as Shipping Address
+      </div>
       <ProductSection title="FREQUENTLY BOUGHT PRODUCTS" products={product3} />
       <Footer />
     </div>

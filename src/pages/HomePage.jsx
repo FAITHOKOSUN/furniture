@@ -18,21 +18,21 @@ const products = [
 ];
 
 const product1 = [
-  { id: 1, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 5kg', image: assets.sofa1 },
-  { id: 2, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 5kg', image: assets.sofa2 },
-  { id: 3, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 5kg', image: assets.sofa3 },
-  { id: 4, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 5kg', image: assets.sofa4 },
-  { id: 5, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 5kg', image: assets.sofa5 },
-  { id: 6, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 5kg', image: assets.sofa6 },
+  { id: 1, name: 'Sturdy Suede Arm Chair', price: '₦96,000', weight: 'weight: 15kg', image: assets.sofa1 },
+  { id: 2, name: 'Single Arm Chair', price: '₦80,000', weight: 'weight: 13kg', image: assets.sofa2 },
+  { id: 3, name: 'Single Arm Chair', price: '₦25,000', weight: 'weight: 67kg', image: assets.sofa3 },
+  { id: 4, name: 'Sturdy Suede Arm Chair', price: '₦96,000', weight: 'weight: 90kg', image: assets.sofa4 },
+  { id: 5, name: 'Single Arm Chair', price: '₦80,000', weight: 'weight: 70kg', image: assets.sofa5 },
+  { id: 6, name: 'Single Arm Chair', price: '₦85,000', weight: 'weight: 50kg', image: assets.sofa6 },
 ];
 
 const product2 = [
-  { id: 1, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 5kg', image: assets.table1 },
-  { id: 2, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 5kg', image: assets.table2 },
-  { id: 3, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 5kg', image: assets.table3 },
-  { id: 4, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 5kg', image: assets.table4 },
-  { id: 5, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 5kg', image: assets.table5 },
-  { id: 6, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 5kg', image: assets.table6 },
+  { id: 1, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 75kg', image: assets.table1 },
+  { id: 2, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 15kg', image: assets.table2 },
+  { id: 3, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 20kg', image: assets.table3 },
+  { id: 4, name: 'Sturdy Suede Arm Chair', price: '₦86,000', weight: 'weight: 70kg', image: assets.table4 },
+  { id: 5, name: 'Single Arm Chair', price: '₦70,000', weight: 'weight: 78kg', image: assets.table5 },
+  { id: 6, name: 'Single Arm Chair', price: '₦75,000', weight: 'weight: 65kg', image: assets.table6 },
 ];
 
 const HomePage = () => {

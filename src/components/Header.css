@@ -7,6 +7,7 @@
   font-family: 'Lato', sans-serif;
   padding: 16px 0;
   border-bottom: 1px solid #ccc;
+  
 }
 
 .header-top {
@@ -50,18 +51,20 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 200px;
+  padding: 0px;
 }
 
 .search-bar input {
-  flex: 1;
+  flex:1 ;
   padding: 8px;
   border: none;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-: 6px;
 }
 
 .search-bar button {
-  padding: 15px;
+  padding: 5px;
   border: none;
   background-color: #ddd;
   cursor: pointer;
@@ -103,9 +106,6 @@
   text-decoration: none; /* Remove underline on hover */
 }
 
-
-
-
 .cart-button {
   position: relative;
   background: none;
@@ -131,6 +131,7 @@
   width: 100%;
   height: 1px;
   background-color: #0a0a0a;
+  bottom: -10px; 
 }
 .menuicon2{
   margin-right: 15px;
@@ -142,8 +143,7 @@
   padding: 10px 20px;
   width: 100%;
   overflow-x: auto;
-  background-color: #f8f8f8;
-  border-top: 1px solid #ccc;
+ 
 }
 
 .navigation a {
@@ -161,6 +161,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .navigation {
     display: none;
   }
@@ -222,7 +223,7 @@
     max-width: 200px;
     width: 200%;
   }
-
+ 
   .header-bottom {
     justify-content: center;
   }

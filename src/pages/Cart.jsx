@@ -27,20 +27,15 @@ const Cart = () => {
       <Header />
       <div className="order-steps">
         <div className="step">
-          <img src={assets.Frame1} alt="Step 1" className="step-image active" />
+          <div className="step-line active"></div>
           <div className="step-label">Your Cart</div>
         </div>
         <div className="step">
-          <img src={assets.Frame3} alt="Step 2" className="step-image" />
-          
+          <div className="step-line "></div>
+          <div className="step-label"></div>
         </div>
         <div className="step">
-          <img src={assets.Frame3} alt="Step 3" className="step-image" />
-          
-        </div>
-        <div className="step">
-          <img src={assets.Frame3} alt="Step 4" className="step-image" />
-          
+          <div className="step-line"></div>
         </div>
       </div>
 
@@ -71,7 +66,6 @@ const Cart = () => {
           <p><span>Subtotal:</span> <span className="right-align">₦86,000</span></p>
           <p className="shipping-cost">
             <span>Shipping costs:</span>
-            
           </p>
           <p className="tax-estimate"><span>Tax Estimate:</span> <span className="right-align">₦4500</span></p>
           <p><span><strong>GRANDTOTAL Estimate:</strong></span> <span className="right-align"><strong>₦90,500</strong></span></p>

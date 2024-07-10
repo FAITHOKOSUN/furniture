@@ -1,21 +1,24 @@
-
 .order-steps {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .step {
   text-align: center;
   margin: 0 10px;
+  flex-shrink: 0; 
 }
 
 .step-line {
-  width: 50px;
+  width: 100px;
   height: 10px;
   border-radius: 5px;
   background-color: #EDC9AF;
 }
+
 .step-line.active1 {
   background-color: black;
 }
@@ -74,12 +77,6 @@
   margin-top: 0;
 }
 
-
-
-
-
-
-
 .shipping-address {
   margin-top: 20px;
 }
@@ -100,15 +97,10 @@
   width: 100%;
 }
 
-/* Media queries for responsive design */
+
 @media (max-width: 768px) {
   .order-steps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .step {
-    margin: 10px 0;
+    justify-content: space-between; 
   }
 
   .order-summary {

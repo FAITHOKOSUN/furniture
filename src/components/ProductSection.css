@@ -6,42 +6,43 @@
 
 .section-header {
   display: flex;
- 
-  /* Center the content */
   align-items: center;
   margin-bottom: 20px;
   background: #8b4513;
   width: 100%;
-  padding: 10px 0; /* Adjust padding as needed */
+  padding: 10px 0; 
   color: white;
   font-family: 'Lato', sans-serif;
+  
+  
 }
 
 .section-header .fire-icon {
-  width: 20px; /* Adjust icon size as needed */
+  width: 20px; 
   height: auto;
-  margin: 0 5px; /* Adjust margin to control spacing between the icon and text */
+  margin: 0 5px; 
 }
 
 .section-header .main-title {
-  font-size: 1.1em; /* Adjust main title font size as needed */
+  font-size: 1em; 
   text-align:right;
+  margin: 0 5px; 
 }
 
 .section-header .subtitle {
-  font-size: 0.8em; /* Adjust subtitle font size as needed */
+  font-size: 0.7em; 
 }
 
 .product-list {
   display: flex;
   gap: 20px;
-  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  overflow-x: auto;
   padding: 10px;
-  justify-content: flex-start; /* Align products to the start */
+  justify-content: flex-start; 
 }
 
 .product-card {
-  min-width: 200px; /* Set a minimum width to maintain consistent size */
+  min-width: 200px; 
   padding: 20px;
   text-align: center;
   background-color: #fff;

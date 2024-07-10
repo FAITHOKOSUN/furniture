@@ -6,21 +6,15 @@
 }
 
 .shop-section {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
-.shop-image-container {
-width: Fill (1,280px)px;
-height: Fixed (366px)px;
-gap: 1px;
-opacity: 10px;
-
-}
 
 .shop-image-container img {
   width: 100%;
   display: block;
-  margin-top: -20px; /* Adjust to move up a bit */
+  margin-top: -30px; 
+  
 }
 
 .shop-all {
@@ -32,7 +26,7 @@ opacity: 10px;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-left: 10px; /* Adjust to move closer to categories */
+  margin-left: 20px; 
   text-decoration: underline;
 }
 
@@ -43,7 +37,7 @@ opacity: 10px;
 }
 
 .category {
-  margin: 0 10px; /* Adjust margin between categories */
+  margin: 0 10px; 
   text-align: center;
 }
 
@@ -55,15 +49,15 @@ opacity: 10px;
 }
 
 .category img {
-  width: 120px; /* Set the width of the images */
+  width: 120px; 
   height: auto;
-  margin: 1 auto 5px; /* Center the images and add space below */
+  margin: 1 auto 5px; 
   border-radius: 10px;
   border: 1px solid transparent;
 }
 
 .category.living-room img  {
-  width: 200px; /* Larger size for "Living Room" */
+  width: 200px; 
   border: 1px solid #8B4513;
   border-radius: 10px;
 }
@@ -71,17 +65,17 @@ opacity: 10px;
 
 .category span {
   display: block;
-  margin-top: 4px; /* Add space between image and text */
+  margin-top: 4px; 
   font-size: 1.2em;
   font-family: 'Lato', sans-serif;
 }
 @media screen and (max-width: 768px) {
-  /* Mobile styles */
+  
   .living-room-text {
-    display: block; /* Show "Living Room" text on mobile */
+    display: block;
   }
 
   .categories .category {
-    display: none; /* Hide category images on mobile */
+    display: none; 
   }
 }
