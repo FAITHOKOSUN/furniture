@@ -34,7 +34,7 @@ const Header = () => {
           </button>
           <button className="action-button">
             <img src={assets.user} alt="User Icon" className="action-icon" />
-            <span className="action-text">Log in/Register</span>
+            <span className="action-text"></span>
             <span className="action-t">Login</span>
             
           </button>
