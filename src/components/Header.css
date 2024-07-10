@@ -10,12 +10,18 @@
 }
 
 .header-top {
+  
   background: #8b4513;
   text-align: center;
   color: white;
   font-size: 12px;
-  padding: 8px 0;
   width: 100%;
+  height: Hug (104px)px;
+  padding: 64px 90px 16px 80px;
+  gap: 10px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+
 }
 
 .header-bottom {
@@ -64,7 +70,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
 }
 
 .action-button {
@@ -76,7 +82,7 @@
 }
 .actions {
   display: flex;
-  gap: 10px;
+  gap: 1px;
 }
 
 .action-button {
@@ -126,7 +132,9 @@
   height: 1px;
   background-color: #0a0a0a;
 }
-
+.menuicon2{
+  margin-right: 15px;
+}
 .navigation {
   display: flex;
   justify-content: center;
@@ -165,9 +173,15 @@
   }
 
   
+.action-text {
+  display: inline-block;
+}
 
   .action-button.show-mobile {
     display: inline-flex;
+  }
+  .action-text {
+    display: none; 
   }
 
   .cart-button {

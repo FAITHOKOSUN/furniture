@@ -34,7 +34,9 @@ const Header = () => {
           </button>
           <button className="action-button">
             <img src={assets.user} alt="User Icon" className="action-icon" />
-            Log in/Register
+            <span className="action-text">Log in/Register</span>
+            <span className="action-t">Login</span>
+            
           </button>
           <Link to="/cart" className="cart-button">
             🛒
@@ -45,6 +47,7 @@ const Header = () => {
       <div className="header-line"></div>
       <nav className="navigation">
         <Link to="/menu">
+        <img src={menuIcon} alt="Menu Icon" className="menuicon2" />
           <span>Menu</span>
         </Link>
         <Link to="/shop" className="shop-link">
